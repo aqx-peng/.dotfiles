@@ -5,7 +5,7 @@ My configs for my development environment on Linux/UNIX systems.
 Configs included for:
 - [Alacritty](https://github.com/alacritty/alacritty)
 - [neovim](https://github.com/neovim/neovim)
-- [tmux](https://github.com/tmux/tmux) configured with [Oh my tmux!](
+- [tmux](https://github.com/tmux/tmux) configured with [Oh my tmux!](https://github.com/gpakosz/.tmux)
 - [zsh](https://www.zsh.org/) configured with [Zim](https://github.com/zimfw/zimfw)
 
 
