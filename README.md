@@ -26,7 +26,7 @@ If you intend to use the included makefile to install all configs, GNU stow is r
 
 - If you would like to install a specific config instead, run
     ```sh
-    stow --verbose --target $$HOME [foldername]
+    stow --verbose --target=$$HOME [foldername]
     ```
     inside the cloned repository, where `[foldername]` is the name of the folder for the configuration you would like to install
 
