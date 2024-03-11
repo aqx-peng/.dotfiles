@@ -1,0 +1,5 @@
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
+export EDITOR="nvim"
+export VISUAL="nvim"
+export PAGER="less"
+export CD_LS_COMMAND="ls -a"
