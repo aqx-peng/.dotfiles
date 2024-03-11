@@ -28,7 +28,7 @@ If you intend to use the included makefile to install all configs, GNU stow is r
     ```sh
     stow --verbose --target=$$HOME [foldername]
     ```
-    inside the cloned repository, where `[foldername]` is the name of the folder for the configuration you would like to install
+    inside the cloned repository, where `[foldername]` is the name of the folder for the config you would like to install
 
 ### Uninstalling configs
 The included makefile can also be used to delete all configs.
