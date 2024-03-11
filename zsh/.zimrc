@@ -57,8 +57,11 @@ zmodule zsh-users/zsh-autosuggestions
 # powerlevel10k theme
 zmodule romkatv/powerlevel10k --use degit
 
-# Aliases for exa
+# Aliases for exa/eza
 zmodule exa
 
 # ls after cd
 zmodule zshzoo/cd-ls
+
+# ssh module
+zmodule ssh
