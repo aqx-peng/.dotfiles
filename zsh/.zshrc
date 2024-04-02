@@ -155,4 +155,5 @@ alias ta="tmux a"
 alias tl="tmux ls"
 alias dots="~/.dotfiles"
 alias n="nvim"
+. ~/.zsh_aliases
 
