@@ -1,5 +1,26 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+call plug#begin()
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+
+Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'yegappan/mru'
+Plug 'preservim/nerdtree'
+
+
+Plug 'skielbasa/vim-material-monokai'
+call plug#end()
 
 " bufExplorer
 let g:bufExplorerDefaultHelp=0
@@ -12,10 +33,12 @@ map <leader>o :BufExplorer<cr>
 let MRU_Max_Entries = 400
 map <leader>f :MRU<cr>
 
+" yankstack
 let g:yankstack_yank_keys = ['y', 'd']
 nmap <c-p> <Plug>yankstack_substitute_older_paste
 nmap <c-n> <Plug>yankstack_substitute_newer_paste
 
+" ctrlp
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_map = '<c-f>'
 map <leader>j :CtrlP<cr>
@@ -24,6 +47,7 @@ map <leader><c-b> :CtrlPBuffer<cr>
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 
+" nerdtree
 let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
@@ -35,6 +59,7 @@ map <leader>nf :NERDTreeFind<cr>
 
 vmap Si S(i_<esc>f)
 
+" lightline
 let g:lightline = {
       \ 'colorscheme': 'one',
       \ 'active': {
@@ -57,7 +82,7 @@ let g:lightline = {
       \ }
 
 " Monokai
-"let g:materialmonokai_italic=1
+let g:materialmonokai_italic=1
 colorscheme material-monokai
 
 " Set transparent backgrounds

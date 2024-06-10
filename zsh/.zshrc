@@ -145,6 +145,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# Load yarn global
+export PATH="$PATH:`yarn global bin`"
+
 # Set vim mode
 bindkey -v
 
@@ -156,4 +159,3 @@ alias tl="tmux ls"
 alias dots="~/.dotfiles"
 alias n="nvim"
 . ~/.zsh_aliases
-
