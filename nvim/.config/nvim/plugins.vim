@@ -199,10 +199,10 @@ lua <<EOF
 
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
-  local servers = { 'pylsp', 'tsserver' }
+  local servers = { 'pylsp', 'ts_ls' }
   for _, server in pairs(servers)
     do
-      require('lspconfig')[server].setup {
+      vim.lsp.config[server] = {
         capabilities = capabilities
       }
     end
